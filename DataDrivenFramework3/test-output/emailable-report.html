@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Stock Suite</th></tr>
+<tr><td><a href="#t0">Add New Stock--New Stock</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">455</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Modify Stock--Sell Existing Stock</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">8</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Modify Stock--Buy Existing Stock</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">9</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">472</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Stock Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add New Stock--New Stock &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">rediff.testcases.StockManagement</td><td><a href="#m0">quit</a></td><td rowspan="1">1717756563329</td><td rowspan="1">0</td></tr><tr><th colspan="4">Add New Stock--New Stock &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">rediff.testcases.StockManagement</td><td><a href="#m1">verifyTransactionHistory</a></td><td rowspan="1">1717756563304</td><td rowspan="1">20</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Modify Stock--Sell Existing Stock &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">rediff.testcases.StockManagement</td><td><a href="#m2">quit</a></td><td rowspan="1">1717756563377</td><td rowspan="1">0</td></tr><tr><th colspan="4">Modify Stock--Sell Existing Stock &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">rediff.testcases.StockManagement</td><td><a href="#m3">modifyStock</a></td><td rowspan="1">1717756563372</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m4">verifyTransactionHistory</a></td><td rowspan="1">1717756563375</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Modify Stock--Buy Existing Stock &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">rediff.testcases.StockManagement</td><td><a href="#m5">quit</a></td><td rowspan="1">1717756563400</td><td rowspan="1">1</td></tr><tr><th colspan="4">Modify Stock--Buy Existing Stock &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">rediff.testcases.StockManagement</td><td><a href="#m6">modifyStock</a></td><td rowspan="1">1717756563395</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m7">verifyTransactionHistory</a></td><td rowspan="1">1717756563398</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>Add New Stock--New Stock</h2><h3 id="m0">rediff.testcases.StockManagement#quit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@e383572</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.quit(GenericKeywords.java:235)
+	at TestBase.basetest.quit(basetest.java:68)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">rediff.testcases.StockManagement#verifyTransactionHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>addstock</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:269)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:246)
+	at keywords.GenericKeywords.GetElement(GenericKeywords.java:141)
+	at keywords.GenericKeywords.getRowWithCellData(GenericKeywords.java:284)
+	at keywords.ApplicationKeywords.goToTransactionHistory(ApplicationKeywords.java:70)
+	at rediff.testcases.StockManagement.verifyTransactionHistory(StockManagement.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Modify Stock--Sell Existing Stock</h2><h3 id="m2">rediff.testcases.StockManagement#quit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@77128536</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.quit(GenericKeywords.java:235)
+	at TestBase.basetest.quit(basetest.java:68)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">rediff.testcases.StockManagement#modifyStock</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>org.testng.TestRunner@77128536</td><td>sellstock</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:269)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:246)
+	at keywords.GenericKeywords.GetElement(GenericKeywords.java:141)
+	at keywords.GenericKeywords.getRowWithCellData(GenericKeywords.java:284)
+	at keywords.ApplicationKeywords.findCurrentStockQuantity(ApplicationKeywords.java:52)
+	at rediff.testcases.StockManagement.modifyStock(StockManagement.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">rediff.testcases.StockManagement#verifyTransactionHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>sellstock</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:269)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:246)
+	at keywords.GenericKeywords.GetElement(GenericKeywords.java:141)
+	at keywords.GenericKeywords.getRowWithCellData(GenericKeywords.java:284)
+	at keywords.ApplicationKeywords.goToTransactionHistory(ApplicationKeywords.java:70)
+	at rediff.testcases.StockManagement.verifyTransactionHistory(StockManagement.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Modify Stock--Buy Existing Stock</h2><h3 id="m5">rediff.testcases.StockManagement#quit</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@38234a38</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.quit(GenericKeywords.java:235)
+	at TestBase.basetest.quit(basetest.java:68)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">rediff.testcases.StockManagement#modifyStock</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>org.testng.TestRunner@38234a38</td><td>addstock</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:269)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:246)
+	at keywords.GenericKeywords.GetElement(GenericKeywords.java:141)
+	at keywords.GenericKeywords.getRowWithCellData(GenericKeywords.java:284)
+	at keywords.ApplicationKeywords.findCurrentStockQuantity(ApplicationKeywords.java:52)
+	at rediff.testcases.StockManagement.modifyStock(StockManagement.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">rediff.testcases.StockManagement#verifyTransactionHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>addstock</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null
+	at keywords.GenericKeywords.takeScreenShot(GenericKeywords.java:269)
+	at keywords.GenericKeywords.reportFailure(GenericKeywords.java:246)
+	at keywords.GenericKeywords.GetElement(GenericKeywords.java:141)
+	at keywords.GenericKeywords.getRowWithCellData(GenericKeywords.java:284)
+	at keywords.ApplicationKeywords.goToTransactionHistory(ApplicationKeywords.java:70)
+	at rediff.testcases.StockManagement.verifyTransactionHistory(StockManagement.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at Runner.MyTestNGRunner.run(MyTestNGRunner.java:79)
+	at Runner.JSONRunner.main(JSONRunner.java:85)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
